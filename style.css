@@ -1,3 +1,106 @@
-h1 {
-  color: aliceblue;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 111px;
+    height: 74px;
+    background-image: url("/Asset/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hamburg {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 19px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    align-items: 1;
+  }
+
+  .starter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .starter h1 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    left: 16px;
+    top: 104px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    padding: 20px 20px;
+
+    /* or 50px */
+
+    color: #1a2236;
+  }
+
+  .starter p {
+    position: absolute;
+    height: 147px;
+    left: 16px;
+    top: 221px;
+    padding: 20px 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  .btn {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    left: 30px;
+    top: 390px;
+    background-color: #1a2236;
+    color: white;
+  }
+}
+
+.combo {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  left: 0;
+  top: 472px;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/Asset/colorcombo.svg);
 }
